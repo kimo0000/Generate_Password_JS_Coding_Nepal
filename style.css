@@ -1,0 +1,81 @@
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to left, #fa14, #af37);
+}
+.wrapper {
+  width: 50%;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 12px;
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  gap: 15px;
+}
+.inpts {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+.inpts input {
+  border: 1px solid #ddd;
+  padding: 8px 15px;
+  border-radius: 8px;
+  width: 100%;
+  font-weight: 700;
+}
+.inpts i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+.inpts i:hover {
+  opacity: 1;
+}
+.inpts_range {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.inpts_range .range {
+  width: 90%;
+  accent-color: blueviolet;
+  cursor: pointer;
+}
+.inpts_range .range_value {
+  font-size: 18px;
+  font-weight: 700;
+}
+#btn_genrator {
+  padding: 8px 10px;
+  width: 100%;
+  border-radius: 8px;
+  background-color: blueviolet;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 17px;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+#btn_genrator:hover {
+  opacity: 1;
+}
